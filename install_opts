@@ -1,15 +1,14 @@
 mode=unattended
-enable-components=javaalfresco,alfrescosolr4
-disable-components=postgres,alfrescosolr,alfrescosharepoint,alfrescowcmqs,alfrescogoogledocs,libreofficecomponent
+enable-components=javaalfresco,postgres,alfrescosolr4
+disable-components=libreofficecomponent,aosmodule,alfrescogoogledocs,alfrescosolr,alfrescowcmqs
 
+tomcat_server_domain=0.0.0.0
 # Use JDBC settings for an existing database
 jdbc_url=jdbc:postgresql://localhost/alfresco
 jdbc_driver=org.postgresql.Driver
 jdbc_database=alfresco
 jdbc_username=alfresco
 jdbc_password=alfresco123
-
-tomcat_server_domain=0.0.0.0
 
 # Install location
 prefix=/opt/alfresco
